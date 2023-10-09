@@ -10,7 +10,6 @@ app.use(bodyParser.json())
 app.post('/store', (req, res) => {
   const { labels } = req.body
   data.labels = labels
-  console.log(labels)
   res.send('OK')
 })
 
